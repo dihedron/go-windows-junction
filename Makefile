@@ -1,4 +1,4 @@
-NAME := junctions
+NAME := junction
 DESCRIPTION := A tool to manipulate Windows junctions and UNIX symlinks.
 COPYRIGHT := 2024 © Andrea Funtò
 LICENSE := MIT

@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/dihedron/junctions/junction"
+	"github.com/dihedron/junction/junction"
 )
 
 type Create struct {

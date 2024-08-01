@@ -1,16 +1,25 @@
-junctions
-===================
+# junctions
 
 Create junctions on Windows and hard links on UNIX.
 
 ```bash
-$> junctions target mountpoint
+$> dist/linux/amd64/junctions create --target=_tests/target/test.txt --link=_tests/mylink
 ```
 
-for instance:
+where `target` is the filesystem object the link will point to, and `link` is the name of the link/junction. At the end of the day, it will look as follows:
 
 ```bash
-$ junctions ./output link_name
-link_name is linked to ./output
+$> ls -la _tests
+total 12
+drwxrwsr-x 3 dihedron users 4096 ago  1 15:28 .
+drwxrwsr-x 9 dihedron users 4096 ago  1 15:26 ..
+lrwxrwxrwx 1 dihedron users   55 ago  1 15:28 mylink -> /workspaces/junction/_tests/target/test.txt
+drwxrwsr-x 2 dihedron users 4096 ago  1 15:02 target
+```
+
+Remove a link:
+
+```bash
+$> dist/linux/amd64/junctions remove --link=_tests/mylink
 ```
 

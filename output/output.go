@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	"github.com/Masterminds/sprig/v3"
-	"github.com/dihedron/junctions/templating"
+	"github.com/dihedron/junction/templating"
 	"gopkg.in/yaml.v3"
 )
 

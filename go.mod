@@ -1,4 +1,4 @@
-module github.com/dihedron/junctions
+module github.com/dihedron/junction
 
 go 1.22
 

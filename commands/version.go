@@ -7,7 +7,7 @@ import (
 	"path"
 	"runtime/debug"
 
-	"github.com/dihedron/junctions/output"
+	"github.com/dihedron/junction/output"
 )
 
 // Version is the command that prints information about the application
