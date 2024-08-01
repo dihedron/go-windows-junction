@@ -1,5 +1,5 @@
 NAME := junctions
-DESCRIPTION := A tool to manipulate Windows junctions and UNIX hard links.
+DESCRIPTION := A tool to manipulate Windows junctions and UNIX symlinks.
 COPYRIGHT := 2024 © Andrea Funtò
 LICENSE := MIT
 LICENSE_URL := https://opensource.org/license/mit/

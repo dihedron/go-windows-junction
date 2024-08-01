@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 package junction
@@ -6,6 +7,6 @@ import (
 	"os"
 )
 
-func create(target, mountPt string) error {
-	return os.Symlink(target, mountPt)
+func create(target, link string) error {
+	return os.Symlink(target, link)
 }

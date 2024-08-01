@@ -14,17 +14,17 @@ func TestCreate(t *testing.T) {
 	}
 
 	t.Logf("target is %q", target)
-	mountpoint := filepath.Join(os.TempDir(), "junctionTest")
-	t.Logf("mountpoint is %q", mountpoint)
+	name := filepath.Join(os.TempDir(), "junctionTest")
+	t.Logf("link is %q", name)
 
-	err = Create(target, mountpoint)
+	err = Create(target, name)
 	if err != nil {
 		t.Fatal(fmt.Errorf("Create: %w", err))
 	}
-	t.Log("mountpoint created")
-	defer os.Remove(mountpoint)
+	t.Log("link created")
+	defer os.Remove(name)
 
-	link, err := os.Readlink(mountpoint)
+	link, err := os.Readlink(name)
 	if err != nil {
 		t.Fatal(fmt.Errorf("os.Readlink: %w", err))
 	}
@@ -33,7 +33,7 @@ func TestCreate(t *testing.T) {
 		t.Fatal(fmt.Errorf("os.Readlink: linked path differs : '%s' != '%s'", target, link))
 	}
 
-	file := filepath.Join(mountpoint, "junction.go")
+	file := filepath.Join(link, "junction.go")
 	fd, err := os.Open(file)
 	if err != nil {
 		t.Fatal(fmt.Errorf("mount may be fake because '%s' can not be open", file))
