@@ -1,9 +1,11 @@
 # junctions
 
-Create junctions on Windows and hard links on UNIX.
+Manipulate junctions on Windows and symlinks on UNIX.
+
+## Create
 
 ```bash
-$> dist/linux/amd64/junctions create --target=_tests/target/test.txt --link=_tests/mylink
+$> dist/linux/amd64/junction create --target=_tests/target/test.txt --link=_tests/mylink
 ```
 
 where `target` is the filesystem object the link will point to, and `link` is the name of the link/junction. At the end of the day, it will look as follows:
@@ -17,9 +19,11 @@ lrwxrwxrwx 1 dihedron users   55 ago  1 15:28 mylink -> /workspaces/junction/_te
 drwxrwsr-x 2 dihedron users 4096 ago  1 15:02 target
 ```
 
-Remove a link:
+## Remove
+
+In order to remove a link:
 
 ```bash
-$> dist/linux/amd64/junctions remove --link=_tests/mylink
+$> dist/linux/amd64/junction remove --link=_tests/mylink
 ```
 
