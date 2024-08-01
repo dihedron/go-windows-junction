@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/dihedron/go-windows-junction/commands"
+	"github.com/dihedron/junctions/commands"
 	"github.com/jessevdk/go-flags"
 )
 

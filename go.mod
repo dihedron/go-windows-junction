@@ -1,4 +1,4 @@
-module github.com/dihedron/go-windows-junction
+module github.com/dihedron/junctions
 
 go 1.22
 
@@ -24,5 +24,5 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.0 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
-	golang.org/x/crypto v0.3.0 // indirect
+	golang.org/x/crypto v0.17.0 // indirect
 )

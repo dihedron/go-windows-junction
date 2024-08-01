@@ -1,5 +1,5 @@
-NAME := go-windows-junction
-DESCRIPTION := A tool to manipulate Windows junctions and Unix hard links.
+NAME := junctions
+DESCRIPTION := A tool to manipulate Windows junctions and UNIX hard links.
 COPYRIGHT := 2024 © Andrea Funtò
 LICENSE := MIT
 LICENSE_URL := https://opensource.org/license/mit/

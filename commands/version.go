@@ -7,7 +7,7 @@ import (
 	"path"
 	"runtime/debug"
 
-	"github.com/dihedron/go-windows-junction/output"
+	"github.com/dihedron/junctions/output"
 )
 
 // Version is the command that prints information about the application

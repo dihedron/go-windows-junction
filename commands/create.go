@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/dihedron/go-windows-junction/junction"
+	"github.com/dihedron/junctions/junction"
 )
 
 type Create struct {
